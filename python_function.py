@@ -16,8 +16,6 @@ with mlflow.start_run(experiment_id=0):
 
     # Log a metric; metrics can be updated throughout the run
     log_metric("foo", random())
-    log_metric("foo", random() + 1)
-    log_metric("foo", random() + 2)
 
     # Log an artifact (output file)
     if not os.path.exists("outputs_mlf"):
